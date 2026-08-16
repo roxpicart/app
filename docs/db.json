@@ -1,6 +1,6 @@
 [
-  { "id": 1, "description": "", "price": null },
-  { "id": 2, "description": "", "price": null },
+  { "id": 1, "description": "cea mai buna", "price": 20 },
+  { "id": 2, "description": "cea mai buna", "price": 30 },
   { "id": 3, "description": "", "price": null },
   { "id": 4, "description": "", "price": null },
   { "id": 5, "description": "", "price": null },
