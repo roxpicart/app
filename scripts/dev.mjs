@@ -20,6 +20,7 @@ const mimeTypes = {
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
+  ".jfif": "image/jpeg",
   ".webp": "image/webp",
   ".avif": "image/avif",
 };

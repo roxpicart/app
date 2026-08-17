@@ -33,7 +33,7 @@ const page = `<!doctype html>
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
   <script>
     const fallbackPaintings=[{id:1,description:"",price:null,availability:0},{id:2,description:"",price:null,availability:0},{id:3,description:"",price:null,availability:0},{id:4,description:"",price:null,availability:0},{id:5,description:"",price:null,availability:0},{id:6,description:"",price:null,availability:0},{id:7,description:"",price:null,availability:0},{id:8,description:"",price:null,availability:0}];
-    const extensions=["png","jpg","jpeg","webp","avif","PNG","JPG","JPEG"],gallery=document.getElementById("gallery");
+    const extensions=["png","jpg","jpeg","jfif","webp","avif","PNG","JPG","JPEG","JFIF"],gallery=document.getElementById("gallery");
     function formatPrice(value){if(value===null||value===undefined||value==="")return"Pret la cerere";if(typeof value==="number")return new Intl.NumberFormat("ro-RO",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(value);return value}
     function findImage(id,index){return new Promise(function(resolve){if(index>=extensions.length){resolve(null);return}const probe=new Image();probe.onload=function(){resolve(probe.src)};probe.onerror=function(){findImage(id,index+1).then(resolve)};probe.src="./images/"+String(id)+"."+extensions[index]})}
     async function loadPaintings(){try{const response=await fetch("./db.json",{cache:"no-store"});if(!response.ok)throw new Error("db.json unavailable");const data=await response.json();return Array.isArray(data)?data:fallbackPaintings}catch{return fallbackPaintings}}
