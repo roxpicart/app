@@ -1,7 +1,7 @@
 [
-  { "id": 1, "description": "cea mai buna", "price": 20, "availability": 0 },
-  { "id": 2, "description": "cea mai buna", "price": 30, "availability": 0 },
-  { "id": 3, "description": "", "price": null, "availability": 0 },
+  { "id": 1, "description": "Tablou simpatic...", "price": 40, "availability": 2 },
+  { "id": 2, "description": "Tablou bengos.", "price": 30, "availability": 0 },
+  { "id": 3, "description": "Tablou bengalez", "price": 40, "availability": 1 },
   { "id": 4, "description": "", "price": null, "availability": 0 },
   { "id": 5, "description": "", "price": null, "availability": 0 },
   { "id": 6, "description": "", "price": null, "availability": 0 },
